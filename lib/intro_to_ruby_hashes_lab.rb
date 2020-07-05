@@ -15,6 +15,6 @@ def update_counting_hash(hash, key)
   update_counting_hash = hash [key]
     if hash[key].include?
       hash[key] += 1 
-    else hash.default(key)
+    else hash[key] = 1 
 end
 end 
